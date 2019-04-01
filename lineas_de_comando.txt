@@ -1,0 +1,11 @@
+## crear usuario ##
+git config --global user.name "FIRST_NAME LAST_NAME"
+## crear correo usuario ##
+git config --global user.email "MY_NAME@example.com"
+## crear repositorio ## 
+git init 
+## clonar repositorio existente ##
+git clone https://github.com/Ruend/alcuza
+
+
+
