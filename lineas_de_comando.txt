@@ -2,10 +2,14 @@
 git config --global user.name "FIRST_NAME LAST_NAME"
 ## crear correo usuario ##
 git config --global user.email "MY_NAME@example.com"
+## para saber el estado de nuestros archivos ##
+git status
 ## crear repositorio ## 
 git init 
 ## clonar repositorio existente ##
-git clone https://github.com/Ruend/alcuza
-
+git clone URL
+## clonar repositorio existente Privado ##
+git clone https://TU-USER:TU-PASS@github.com/username/nombreproyecto.git
+## 
 
 
