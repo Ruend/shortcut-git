@@ -4,10 +4,12 @@ git config --global user.name "FIRST_NAME LAST_NAME"
 git config --global user.email "MY_NAME@example.com"
 ## para saber el estado de nuestros archivos ##
 git status
-## crear primera vez ## 
+## Hacer Commit ## 
 git commit 
 -> se abre terminal se debe escribir el primer comentarios 
 -> para terminar y cerrar :wq
+## Hacer Commit ## 
+Git commit -m "COMENTARIO DEL COMMIT"
 ## volver atras los cambios ## 
 git checkout -- NOMBRE ARCHIVO
 ## crear repositorio ## 
@@ -16,4 +18,11 @@ git init
 git clone URL
 ## clonar repositorio existente Privado ##
 git clone https://TU-USER:TU-PASS@github.com/username/nombreproyecto.git
-## 
+## Ver cambios en el archivo ##
+git diff 
+## Ver branch ##
+git branch
+## crear branch ##
+git branch NOMBRE-BRANCH
+## cambiar de branch ##
+git checkout NOMBRE-BRANCH
