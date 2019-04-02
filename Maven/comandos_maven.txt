@@ -1,0 +1,2 @@
+## Compila tu theme ##
+mvn clean package
