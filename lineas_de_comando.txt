@@ -29,4 +29,4 @@ git checkout NOMBRE-BRANCH
 ##lista de branches que existen, tanto localmente como remotamente.##
 git branch -a
 ##Creamos un nuevo branch localmente, basados en el branch remoto.##
-git pull origin nombre_del_branch
+git checkout -b nombre_del_branch origin/nombre_del_branch
