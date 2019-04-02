@@ -4,6 +4,12 @@ git config --global user.name "FIRST_NAME LAST_NAME"
 git config --global user.email "MY_NAME@example.com"
 ## para saber el estado de nuestros archivos ##
 git status
+## crear primera vez ## 
+git commit 
+-> se abre terminal se debe escribir el primer comentarios 
+-> para terminar y cerrar :wq
+## volver atras los cambios ## 
+git checkout -- NOMBRE ARCHIVO
 ## crear repositorio ## 
 git init 
 ## clonar repositorio existente ##
@@ -11,5 +17,3 @@ git clone URL
 ## clonar repositorio existente Privado ##
 git clone https://TU-USER:TU-PASS@github.com/username/nombreproyecto.git
 ## 
-
-
