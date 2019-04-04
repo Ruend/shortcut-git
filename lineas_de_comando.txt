@@ -20,6 +20,7 @@ git clone URL
 git clone https://TU-USER:TU-PASS@github.com/username/nombreproyecto.git
 ## Ver cambios en el archivo ##
 git diff 
+
 ## Ver branch ##
 git branch
 ## crear branch ##
@@ -30,3 +31,13 @@ git checkout NOMBRE-BRANCH
 git branch -a
 ##Creamos un nuevo branch localmente, basados en el branch remoto.##
 git checkout -b nombre_del_branch origin/nombre_del_branch
+
+## Vincular proyecto local a proyecto remoto.##
+git remote  add origin git@github.com:Ruend/shortcut-git.git
+## Borrar vinculo proyecto local a proyecto remoto ##
+git remote remove origin
+## revisar vinculo de mi ambiente local y remoto ##
+git remote -v
+
+## subir de ambiente local a remoto ##
+git push origin master
