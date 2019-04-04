@@ -62,5 +62,14 @@ git tag -a v1.1 -m "Mensaje del tag" CODIGO DEL COMMIT
 git push origin NOMBRE-VERSION
 ## subir todos los tag ##
 git push origin --tags
+## Eliminar tag local ##
+git tag -d v2.0.3
+## Eliminar tag remoto ##
+git push origin :refs/tags/v2.0.3
 
 
+## WORKFLOWS ##
+## bajar desde la master a origin ##
+git fetch origin
+## bajar desde la origin a local ##
+git merge origin/master
