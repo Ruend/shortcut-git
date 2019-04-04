@@ -1,19 +1,27 @@
+## BASICOS ##
 ## crear usuario ##
 git config --global user.name "FIRST_NAME LAST_NAME"
 ## crear correo usuario ##
 git config --global user.email "MY_NAME@example.com"
+## dar inicio a un repositorio ## 
+git init 
 ## para saber el estado de nuestros archivos ##
 git status
+
+## COMMIT ##
 ## Hacer Commit ## 
 git commit 
 -> se abre terminal se debe escribir el primer comentarios 
 -> para terminar y cerrar :wq
 ## Hacer Commit ## 
-Git commit -m "COMENTARIO DEL COMMIT"
+git commit -m "COMENTARIO DEL COMMIT"
+## cambiar comentario del ultimo commit ##
+git commit --amend -m "ESCRIBIR NUEVO MSJ"
+## Forzamos el commit con los cambios en el código, para actualizar comentario ##
+git push origin master -f
+
 ## volver atras los cambios ## 
 git checkout -- NOMBRE ARCHIVO
-## crear repositorio ## 
-git init 
 ## clonar repositorio existente ##
 git clone URL
 ## clonar repositorio existente Privado ##
@@ -21,6 +29,7 @@ git clone https://TU-USER:TU-PASS@github.com/username/nombreproyecto.git
 ## Ver cambios en el archivo ##
 git diff 
 
+## BRANCH ##
 ## Ver branch ##
 git branch
 ## crear branch ##
@@ -31,6 +40,8 @@ git checkout NOMBRE-BRANCH
 git branch -a
 ##Creamos un nuevo branch localmente, basados en el branch remoto.##
 git checkout -b nombre_del_branch origin/nombre_del_branch
+## pasar al branch master ##
+git commit NOMBRE_RAMA_ABSORVER // debes estar parado en la rama master
 
 ## Vincular proyecto local a proyecto remoto.##
 git remote  add origin git@github.com:Ruend/shortcut-git.git
@@ -41,3 +52,15 @@ git remote -v
 
 ## subir de ambiente local a remoto ##
 git push origin master
+
+##TAGS##
+## creamos un tag##
+git tag -a v1.0 -m "Mensaje del tag"
+## asignar un tag a un commit##
+git tag -a v1.1 -m "Mensaje del tag" CODIGO DEL COMMIT
+## subir tag ##
+git push origin NOMBRE-VERSION
+## subir todos los tag ##
+git push origin --tags
+
+
