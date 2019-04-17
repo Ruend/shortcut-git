@@ -73,3 +73,12 @@ git push origin :refs/tags/v2.0.3
 git fetch origin
 ## bajar desde la origin a local ##
 git merge origin/master
+
+## HOOKS ##
+## modificar mensaje del ultimo commit ##
+git commit --amend -m "Nuevo mensaje del commit."
+##a este cambio podemos hacerle un push para subirlo a un repositorio principal##
+git push --force
+
+Cristobal T
+cristobal.trincado@pad.cl
