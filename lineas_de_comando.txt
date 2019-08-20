@@ -7,6 +7,15 @@ git config --global user.email "MY_NAME@example.com"
 git init 
 ## para saber el estado de nuestros archivos ##
 git status
+## Vincular proyecto local a proyecto remoto.##
+git remote  add origin git@github.com:Ruend/shortcut-git.git
+## Borrar vinculo proyecto local a proyecto remoto ##
+git remote remove origin
+## revisar vinculo de mi ambiente local y remoto ##
+git remote -v
+
+## subir de ambiente local a remoto ##
+git push origin master
 
 ## COMMIT ##
 ## Hacer Commit ## 
@@ -43,15 +52,15 @@ git checkout -b nombre_del_branch origin/nombre_del_branch
 ## pasar al branch master ##
 git commit NOMBRE_RAMA_ABSORVER // debes estar parado en la rama master
 
-## Vincular proyecto local a proyecto remoto.##
-git remote  add origin git@github.com:Ruend/shortcut-git.git
-## Borrar vinculo proyecto local a proyecto remoto ##
-git remote remove origin
-## revisar vinculo de mi ambiente local y remoto ##
-git remote -v
+## STASH ##
+## guarda el estado en una pila y limpia el directorio para poder cambiar ##
+git stash
+## muestra la pila ##
+git stash list
+## Después de cambiar de rama se pegan los cambios ##
+git stash apply
 
-## subir de ambiente local a remoto ##
-git push origin master
+
 
 ##TAGS##
 ## creamos un tag##
@@ -80,5 +89,3 @@ git commit --amend -m "Nuevo mensaje del commit."
 ##a este cambio podemos hacerle un push para subirlo a un repositorio principal##
 git push --force
 
-Cristobal T
-cristobal.trincado@pad.cl
